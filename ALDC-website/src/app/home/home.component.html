@@ -1,0 +1,29 @@
+<div class="App">
+    <div class="App__wrapper">
+        <div class = "heading" >
+            <div class = "heading__logo" >
+                <img src = "../assets/Capture.PNG" alt = "logo" > 
+            </div> 
+            <div class="heading__action">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrapper">
+            <div class="upload-heading">
+                <h1>
+                    Upload your file for Compression
+                </h1>
+            </div>
+            <div class="form">
+                <input id="file" name="file" type="file" (change)="onChange($event)"/>
+                <button class="submit" type="button" (click)="onUpload()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
